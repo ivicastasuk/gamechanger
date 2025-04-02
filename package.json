@@ -1,0 +1,35 @@
+{
+	"name": "gamechanger",
+	"version": "1.0.0",
+	"description": "GameChanger is an all-in-one web platform designed to create real impact — empowering small businesses, active citizens, and digitally inexperienced individuals. By combining AI-powered business tools, civic engagement features, and accessible educational content, GameChanger aims to be exactly what its name promises — a true game changer in everyday life.",
+	"main": "_src/server/index.js",
+	"scripts": {
+		"test": "test",
+		"start": "node _src/server/index.js",
+		"dev": "nodemon _src/server/index.js",
+		"build:css": "npx @tailwindcss/cli -i ./static/input.css -o ./_src/public/css/main.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ivicastasuk/gamechanger.git"
+	},
+	"keywords": [
+		"game",
+		"changer",
+		"gamechanger"
+	],
+	"author": "Ivica Stasuk, ISWorkshop",
+	"license": "GPL-3.0-or-later",
+	"bugs": {
+		"url": "https://github.com/ivicastasuk/gamechanger/issues"
+	},
+	"homepage": "https://github.com/ivicastasuk/gamechanger#readme",
+	"dependencies": {
+		"@tailwindcss/cli": "^4.1.1",
+		"express": "^5.1.0",
+		"tailwindcss": "^4.1.1"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.9"
+	}
+}
